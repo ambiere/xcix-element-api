@@ -44511,7 +44511,7 @@ function paginate_default() {
     const endPosition = startPosition + Number(limit) || limit
     if (++page > 0) {
       if (startPosition < this.length) {
-        return this.slice(startPosition != null ? startPosition : 0, endPosition)
+        return this.slice(startPosition ?? 0, endPosition)
       }
       return { error: "_page number out of data length" }
     }

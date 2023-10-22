@@ -68,7 +68,6 @@ function getGroupOrPeriod_default(data, key) {
 
 // src/server/util/getImageData.mjs
 function getImageData_default(data, options) {
-  var _a, _b, _c, _d, _e
   const imageData = data.filter(d => {
     if (options.type) {
       if (d && "type" in d) return d.type === options.type
@@ -82,23 +81,22 @@ function getImageData_default(data, options) {
     if (options.name && options.name === "Crystal structure") {
       const crystalImg = []
       imageData.map(d => {
-        var _a2, _b2, _c2, _d2, _e2
         crystalImg.push({
-          content_url: (_a2 = d.images[0].content_url) != null ? _a2 : null,
-          alternative_text: (_b2 = d.images[0].alternative_text) != null ? _b2 : null,
-          caption: (_c2 = d.images[0].caption) != null ? _c2 : null,
-          height: (_d2 = d.images[0].height) != null ? _d2 : null,
-          width: (_e2 = d.images[0].width) != null ? _e2 : null,
+          content_url: d.images[0].content_url ?? null,
+          alternative_text: d.images[0].alternative_text ?? null,
+          caption: d.images[0].caption ?? null,
+          height: d.images[0].height ?? null,
+          width: d.images[0].width ?? null,
         })
       })
       return crystalImg
     } else
       return {
-        content_url: (_a = imageData[0].images[0].content_url) != null ? _a : null,
-        alternative_text: (_b = imageData[0].images[0].alternative_text) != null ? _b : null,
-        caption: (_c = imageData[0].images[0].caption) != null ? _c : null,
-        height: (_d = imageData[0].images[0].height) != null ? _d : null,
-        width: (_e = imageData[0].images[0].width) != null ? _e : null,
+        content_url: imageData[0].images[0].content_url ?? null,
+        alternative_text: imageData[0].images[0].alternative_text ?? null,
+        caption: imageData[0].images[0].caption ?? null,
+        height: imageData[0].images[0].height ?? null,
+        width: imageData[0].images[0].width ?? null,
       }
   } else return
 }
