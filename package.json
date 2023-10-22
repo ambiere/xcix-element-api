@@ -17,7 +17,7 @@
     "version": "cz bump",
     "postversion": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "build": "rimraf build && node esbuild.mjs",
-    "test": "pnpm run build && jest"
+    "test": "pnpm run build && jest --coverage"
   },
   "repository": {
     "type": "git",
