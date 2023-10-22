@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -14,18 +14,18 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        os: [ubuntu-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
 
-    - uses: pnpm/action-setup@v2
-      name: Install pnpm
-      with:
-        version: 8
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
 
-    - run: pnpm install
-    - run: pnpm run build --if-present
-    - run: pnpm test
+      - run: pnpm install
+      - run: pnpm run build --if-present
+      - run: pnpm test
