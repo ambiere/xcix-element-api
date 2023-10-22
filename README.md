@@ -1,6 +1,6 @@
 <div align=center>
 
- <p style="font-size: 45px; font-weight:500;">XCIX-ElementAPI</p>
+ <h3 style="font-size: 45px; font-weight:500;">XCIX-ElementAPI</h3>
 
 ### Unlock the Power of Chemistry Data
 
