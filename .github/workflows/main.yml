@@ -43,7 +43,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-  build:
+  test:
+    needs: cache-and-install
     runs-on: ${{ matrix.os }}
     name: Buid and Test
 
@@ -51,6 +52,9 @@ jobs:
       matrix:
         node-version: [14.x, 16.x, 18.x]
         os: [ubuntu-latest, windows-latest, macOS-latest]
+        test_number:
+          - 1
+          - 2
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -70,3 +74,21 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+      - name: Coveralls Parallel
+        uses: coverallsapp/github-action@v2
+        with:
+          flag-name: run-${{ join(matrix.test_number, "-")}}
+          parallel: true
+
+  finish:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
+          carryforward: "run-1, run-2"
