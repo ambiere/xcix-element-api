@@ -1,0 +1,4 @@
+#Ignoire artifacts
+
+build
+coverage

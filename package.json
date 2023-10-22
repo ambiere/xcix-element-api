@@ -1,0 +1,70 @@
+{
+  "name": "xcix-element-api",
+  "version": "0.0.0",
+  "description": "XCIX-ElementAPI: Simplify chemistry projects with easy access to structured JSON data on periodic table elements, including atomic numbers, symbols, names, weights, and more via a user-friendly REST API leveraging Wikipedia infobox data",
+  "main": "./build/server/server.js",
+  "bin": "./build/cli/bin.js",
+  "files": [
+    "build",
+    "public"
+  ],
+  "scripts": {
+    "start": "pnpm run build && node build/cli/bin.js",
+    "dev": "pnpm run build && node build/cli/bin.js",
+    "update": "node src/server/data/wikimedia/updateElements.mjs",
+    "prepare": "husky install",
+    "prettier": "prettier --write --ignore-unknown",
+    "version": "cz bump",
+    "postversion": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "build": "rimraf build && node esbuild.mjs",
+    "test": "pnpm run build && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zhid0399123/xcix-element-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "json-data",
+    "expressjs",
+    "restful-api",
+    "periodic-table-elements",
+    "periodic-table-api",
+    "javascript",
+    "server",
+    "JSON",
+    "API"
+  ],
+  "author": "zhid0399123 <zhid0399123@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.18",
+    "@types/morgan": "^1.9.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "esbuild": "0.19.4",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "kolorist": "^1.8.0",
+    "lint-staged": "^14.0.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0",
+    "prompts": "^2.4.2"
+  },
+  "bugs": {
+    "url": "https://github.com/zhid0399123/xcix-element-api/issues"
+  },
+  "homepage": "https://github.com/zhid0399123/xcix-element-api",
+  "engines": {
+    "node": ">=12"
+  }
+}
