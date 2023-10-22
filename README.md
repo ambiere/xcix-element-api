@@ -1,9 +1,8 @@
 <div align=center>
 
-# XCIX-ElementAPI: Unlock the Power of Chemistry Data
+# XCIX-ElementAPI
 
-[![CodeFactor](https://www.codefactor.io/repository/github/zhid0399123/xcix-element-api/badge)](https://www.codefactor.io/repository/github/zhid0399123/xcix-element-api)
-[![Node.js CI](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml)
+### Unlock the Power of Chemistry Data
 
 <p style="margin: 0 auto; width: 50%;">
 Welcome to the XCIX-ElementAPI, your gateway to simplifying chemistry projects with seamless access to structured JSON data on the periodic table's elements. Whether you're a student, scientist, researcher, or developer, our user-friendly REST API leverages the wealth of knowledge found in Wikipedia's infobox data to provide you with comprehensive and accessible information on chemical elements.
@@ -13,6 +12,11 @@ Powered by :
 
 <br/>
 <img src="https://wikimediafoundation.org/wp-content/uploads/2018/08/Wikimedia-logo_black.png" width="32"/>
+
+<br/>
+
+[![CodeFactor](https://www.codefactor.io/repository/github/zhid0399123/xcix-element-api/badge)](https://www.codefactor.io/repository/github/zhid0399123/xcix-element-api)
+[![Node.js CI](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml)
 
 </div>
 
