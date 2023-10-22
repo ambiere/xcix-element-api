@@ -78,7 +78,7 @@ jobs:
       - name: Coveralls Parallel
         uses: coverallsapp/github-action@v2
         with:
-          flag-name: run-${{ join(matrix.test_number, "-")}}
+          flag-name: run-${{ join(matrix.test_number, '-')}}
           parallel: true
 
   finish:
