@@ -1,6 +1,6 @@
 <div align=center>
 
-# XCIX-ElementAPI
+ <p style="font-size: 45px; font-weight:500;">XCIX-ElementAPI</p>
 
 ### Unlock the Power of Chemistry Data
 
@@ -17,8 +17,12 @@ Powered by :
 
 [![CodeFactor](https://www.codefactor.io/repository/github/zhid0399123/xcix-element-api/badge)](https://www.codefactor.io/repository/github/zhid0399123/xcix-element-api)
 [![Node.js CI](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml)
+[![Last commit](https://img.shields.io/github/last-commit/zhid0399123/xcix-element-api)](https://github.com/zhid0399123/xcix-element-api)
+[![API](https://img.shields.io/badge/API-XCIX%20ElementAPI-default)](https://github.com/zhid0399123/xcix-element-api)
 
 </div>
+
+<br/>
 
 ## What is XCIX-ElementAPI?
 
