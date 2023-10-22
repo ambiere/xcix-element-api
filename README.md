@@ -19,6 +19,7 @@ Powered by :
 [![Node.js CI](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/zhid0399123/xcix-element-api/actions/workflows/main.yml)
 [![Last commit](https://img.shields.io/github/last-commit/zhid0399123/xcix-element-api)](https://github.com/zhid0399123/xcix-element-api)
 [![API](https://img.shields.io/badge/API-XCIX%20ElementAPI-default)](https://github.com/zhid0399123/xcix-element-api)
+[![Coverage Status](https://coveralls.io/repos/github/zhid0399123/xcix-element-api/badge.svg?branch=main)](https://coveralls.io/github/zhid0399123/xcix-element-api?branch=main)
 
 </div>
 
